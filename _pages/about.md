@@ -2,23 +2,86 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: #<a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: Headshot.jpg
+  # address: >
+  #   <p>555 your office number</p>
+  #   <p>123 your address street</p>
+  #   <p>Your City, State 12345</p>
 
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false  # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
+
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a PhD candidate in the [Neural Dynamics and Computation Lab](https://ganguli-gang.stanford.edu/index.html) at [Stanford University](https://www.stanford.edu/) co-advised by [Shaul Druckmann](https://www.druckmannlab.com/) and [Surya Ganguli](https://ganguli-gang.stanford.edu/surya.html). My work received generous funding from a [DOE Computational Science Graduate Fellowship](https://www.krellinst.org/csgf/alumni/profile?n=larsen2016), and through this program, I had the opportunity to intern with [Sandia National Labs'](https://www.sandia.gov/) Extreme-Scale Data Science group and frequently collaborate with [Tammy Kolda](https://www.mathsci.ai/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research combines theoretical and empirical approaches to understand and improve deep learning, low-rank models, and recurrent networks in the brain.
+This has led to the opportunity to work with many excellent collaborators, including [Scott Linderman](https://web.stanford.edu/~swl1/), [Alex Williams](http://alexhwilliams.info/), and [Stanislav Fort](https://stanislavfort.github.io/).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Prior to my PhD, I completed the [MPhil in Scientific Computing](https://www.csc.cam.ac.uk/academic/MPhilSciComp) (Machine Learning Focus) at the [University of Cambridge](https://www.cam.ac.uk/) working with [Carola Bibiane Schönlieb](http://www.damtp.cam.ac.uk/user/cbs31/Home.html) and [Martin Benning](https://www.qmul.ac.uk/maths/profiles/benningmartin.html). I did my undergrad at [Arizona State University](https://www.asu.edu/) and [Barrett, the Honors College](https://barretthonors.asu.edu/) where I worked on [statistical signal processing](http://www.spaslab.asu.edu/).
+
+<!-- Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically. -->
+
+<!-- Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
+
+**Contact:** bwlarsen [at] stanford.edu
+
+<style>
+.course {
+margin: 0;
+padding: 0;
+}
+
+.institution {
+margin: 0;
+padding: 0.2em;
+font-style: italic;
+}
+</style>
+
+<div class="row">    
+      <div class="col-sm-5">
+        <h3>Interests</h3>
+        <ul class="ul-interests">  
+          <li>Machine Learning and Data Science</li> 
+          <li>High-Dimensional Loss Landscapes</li>
+          <li>Numerical Optimization</li> 
+          <li>Randomized Algorithms</li> 
+          <li>Low-Rank Models</li>        
+          <li>Robust Statistics</li>   
+        </ul>
+      </div>     
+      <div class="col-sm-7">
+        <h3>Education</h3>
+        <ul class="ul-edu fa-ul">
+          <li>
+            <i class="fa-li fa fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course"> <b>PhD in Physics</b>, In progress  </p>
+              <p class="course"> <b>MS in Statistics</b>, 2020 </p>
+              <p class="institution">Stanford University</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa-li fa fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course"><b>MPhil in Scientific Computing</b>, 2016</p>
+              <p class="institution">University of Cambridge</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa-li fa fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course"><b>BSE in Electrical Engineering</b>, 2015</p>
+              <p class="course"><b>BS in Physics</b>, 2015</p>
+              <p class="institution">Arizona State University (ASU)</p>
+            </div>
+          </li>     
+        </ul>
+      </div>
+    </div>
