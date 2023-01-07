@@ -1,10 +1,20 @@
 ---
 ---
-@article{larsen2022lotteryDiet,
+@article{larsen2022unmasking,
   abbr={arXiv},
   title={Lottery Tickets on a Data Diet: Finding Initializations with Sparse Trainable Networks},
+  author={Paul*, Mansheej and Chen*, Feng and Larsen*, Brett W. and Frankle, Jonathan and Ganguli, Surya and Dziugaite, Gintare Karolina},
+  journal={arXiv preprint arXiv:2210.03044,},
+  year={2022},
+  arxiv={2210.03044},
+  abstract={Modern deep learning involves training costly, highly overparameterized networks, thus motivating the search for sparser networks that can still be trained to the same accuracy as the full network (i.e. matching). Iterative magnitude pruning (IMP) is a state of the art algorithm that can find such highly sparse matching subnetworks, known as winning tickets. IMP operates by iterative cycles of training, masking smallest magnitude weights, rewinding back to an early training point, and repeating. Despite its simplicity, the underlying principles for when and how IMP finds winning tickets remain elusive. In particular, what useful information does an IMP mask found at the end of training convey to a rewound network near the beginning of training? How does SGD allow the network to extract this information? And why is iterative pruning needed? We develop answers in terms of the geometry of the error landscape. First, we find that—at higher sparsities—pairs of pruned networks at successive pruning iterations are connected by a linear path with zero error barrier if and only if they are matching. This indicates that masks found at the end of training convey the identity of an axial subspace that intersects a desired linearly connected mode of a matching sublevel set. Second, we show SGD can exploit this information due to a strong form of robustness: it can return to this mode despite strong perturbations early in training. Third, we show how the flatness of the error landscape at the end of training determines a limit on the fraction of weights that can be pruned at each iteration of IMP. Finally, we show that the role of retraining in IMP is to find a network with new small weights to prune. Overall, these results make progress toward demystifying the existence of winning tickets by revealing the fundamental role of error landscape geometry.}
+}
+
+@article{larsen2022lotteryDiet,
+  abbr={NeurIPS},
+  title={Lottery Tickets on a Data Diet: Finding Initializations with Sparse Trainable Networks},
   author={Paul*, Mansheej and Larsen*, Brett W. and Ganguli, Surya and Frankle, Jonathan and Dziugaite, Gintare Karolina},
-  journal={arXiv preprint arXiv:2206.01278},
+  journal={36th Conference on Neural Information Processing Systems,},
   year={2022},
   arxiv={2206.01278},
   code={https://github.com/mansheej/lth_diet},
@@ -12,12 +22,24 @@
   abstract={A striking observation about iterative magnitude pruning (IMP; Frankle et al. 2020) is that — after just a few hundred steps of dense training — the method can find a sparse sub-network that can be trained to the same accuracy as the dense network. However, the same does not hold at step 0, i.e. random initialization. In this work, we seek to understand how this early phase of pre-training leads to a good initialization for IMP both through the lens of the data distribution and the loss landscape geometry. Empirically we observe that, holding the number of pre-training iterations constant, training on a small fraction of (randomly chosen) data suffices to obtain an equally good initialization for IMP. We additionally observe that by pre-training only on "easy" training data, we can decrease the number of steps necessary to find a good initialization for IMP compared to training on the full dataset or a randomly chosen subset. Finally, we identify novel properties of the loss landscape of dense networks that are predictive of IMP performance, showing in particular that more examples being linearly mode connected in the dense network correlates well with good initializations for IMP. Combined, these results provide new insight into the role played by the early phase training in IMP.}
 }
 
+@article{larsen2020practical,
+  abbr={SIMAX},
+  title={Practical leverage-based sampling for low-rank tensor decomposition},
+  author={Larsen, Brett W. and Kolda, Tamara G.},
+  journal={SIAM Journal on Matrix Analysis and Applications (SIMAX),},
+  year={2022},
+  doi={https://doi.org/10.1137/21M1441754},
+  arxiv={2006.16438},
+  code={https://github.com/bwlarsen/cp-arls-lev-experiments},
+  abstract={  The low-rank canonical polyadic tensor decomposition is useful in data analysis and can be computed by solving a sequence of overdetermined least squares subproblems. Motivated by consideration of sparse tensors, we propose sketching each subproblem using leverage scores to select a subset of the rows, with probabilistic guarantees on the solution accuracy. We randomly sample rows proportional to leverage score upper bounds that can be efficiently computed using the special Khatri-Rao subproblem structure inherent in tensor decomposition. Crucially,  for a \((d+1)\)-way tensor, the number of rows in the sketched system is \(O(r^d/\epsilon)\) for a decomposition of rank \(r\) and \(\epsilon\)-accuracy in the least squares solve, independent of both the size and the number of nonzeros in the tensor. Along the way, we provide a practical solution to the generic matrix sketching problem of sampling overabundance for high-leverage-score rows, proposing to include such rows deterministically and combine repeated samples in the sketched system; we conjecture that this can lead to improved theoretical bounds. Numerical results on real-world large-scale tensors show the method is significantly faster than deterministic methods at nearly the same level of accuracy.}
+}
+
 
 @article{larsen2022towards,
   abbr={PLOS Comp Bio},
   title={Towards a more general understanding of the algorithmic utility of recurrent connections},
   author={Larsen, Brett W. and Druckmann, Shaul},
-  journal={PLOS Computational Biology},
+  journal={PLOS Computational Biology,},
   volume={18},
   number={6},
   pages={e1010227},
@@ -33,7 +55,7 @@
   abbr={ICLR},
   title={How many degrees of freedom do we need to train deep networks: a loss landscape perspective},
   author={Larsen, Brett W. and Fort, Stanislav and Becker, Nic and Ganguli, Surya},
-  journal={International Conference on Learning Representations (ICLR)},
+  journal={International Conference on Learning Representations,},
   year={2022},
   pdf={https://openreview.net/forum?id=ChMLTGRjFcU},
   arxiv={2107.05802},
@@ -42,25 +64,16 @@
 }
 
 
-@article{larsen2020practical,
-  abbr={SIMAX},
-  title={Practical leverage-based sampling for low-rank tensor decomposition},
-  author={Larsen, Brett W. and Kolda, Tamara G.},
-  journal={arXiv preprint arXiv:2006.16438},
-  year={2020},
-  arxiv={2006.16438},
-  code={https://github.com/bwlarsen/cp-arls-lev-experiments},
-  honor={To appear in SIAM Journal on Matrix Analysis and Applications}
-}
 
-@article{kazemipour2019avoiding,
+
+@article{kazemipour2020avoiding,
   abbr={arXiv},
   title={Avoiding Spurious Local Minima in Deep Quadratic Networks},
   author={Kazemipour, Abbas and Larsen, Brett W. and Druckmann, Shaul},
-  journal={arXiv preprint arXiv:2001.00098},
-  year={2019},
+  journal={arXiv preprint arXiv:2001.00098,},
+  year={2020},
   arxiv={2001.00098},
-  honor={Oral presentation at Deep Math 2020.}
+  honor={Oral presentation at Deep Math 2019.}
 }
 
 @mastersthesis{larsen2016graph,

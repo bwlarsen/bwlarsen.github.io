@@ -18,10 +18,10 @@ social: true  # includes social icons at the bottom of the page
 
 ---
 
-I am a PhD candidate in the [Neural Dynamics and Computation Lab](https://ganguli-gang.stanford.edu/index.html) at [Stanford University](https://www.stanford.edu/) co-advised by [Shaul Druckmann](https://www.druckmannlab.com/) and [Surya Ganguli](https://ganguli-gang.stanford.edu/surya.html). My work received generous funding from a [DOE Computational Science Graduate Fellowship](https://www.krellinst.org/csgf/alumni/profile?n=larsen2016), and through this program, I had the opportunity to intern with [Sandia National Labs'](https://www.sandia.gov/) Extreme-Scale Data Science group and frequently collaborate with [Tammy Kolda](https://www.mathsci.ai/).
+I am a [Research Fellow](https://www.simonsfoundation.org/people/brett-larsen/) at the [Flatiron Institue](https://www.simonsfoundation.org/flatiron/) working jointly between the Centers for [Computational Mathematics](https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/) and [Computational Neuroscience](https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/) as well as a Visiting Scholar at [NYU](https://www.nyu.edu/). I completed my PhD in the [Neural Dynamics and Computation Lab](https://ganguli-gang.stanford.edu/index.html) at [Stanford University](https://www.stanford.edu/) co-advised by [Surya Ganguli](https://ganguli-gang.stanford.edu/surya.html) and [Shaul Druckmann](https://www.druckmannlab.com/) and supported by the [DOE Computational Science Graduate Fellowship](https://www.krellinst.org/csgf/alumni/profile?n=larsen2016). Through this program, I also worked in [Sandia National Labs'](https://www.sandia.gov/) Extreme-Scale Data Science group as a visiting researcher, leading to frequent collaborations with [Tammy Kolda](https://www.mathsci.ai/).
 
 My research combines theoretical and empirical approaches to understand and improve deep learning, low-rank models, and recurrent networks in the brain.
-This has led to the opportunity to work with many excellent collaborators, including [Jonathan Frankle](http://www.jfrankle.com/), [Karolina Dziugaite](https://gkdz.org/), [Stanislav Fort](https://stanislavfort.github.io/), [Alex Williams](http://alexhwilliams.info/), and [Scott Linderman](https://web.stanford.edu/~swl1/).
+This has led to the opportunity to work with many excellent collaborators, including [Jonathan Frankle](http://www.jfrankle.com/), [Karolina Dziugaite](https://gkdz.org/), [Mansheej Paul](https://scholar.google.com/citations?user=gmZt3VgAAAAJ&hl), [Stanislav Fort](https://stanislavfort.github.io/), [Alex Williams](http://alexhwilliams.info/), and [Scott Linderman](https://web.stanford.edu/~swl1/).
 
 Prior to my PhD, I completed the [MPhil in Scientific Computing](https://www.csc.cam.ac.uk/academic/MPhilSciComp) (Machine Learning Focus) at the [University of Cambridge](https://www.cam.ac.uk/) working with [Carola Bibiane Schönlieb](http://www.damtp.cam.ac.uk/user/cbs31/Home.html) and [Martin Benning](https://www.qmul.ac.uk/maths/profiles/benningmartin.html). I did my undergrad at [Arizona State University](https://www.asu.edu/) and [Barrett, the Honors College](https://barretthonors.asu.edu/) where I worked on statistical signal processing.
 
@@ -29,7 +29,7 @@ Prior to my PhD, I completed the [MPhil in Scientific Computing](https://www.csc
 
 <!-- Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
-**Contact:** bwlarsen [at] stanford.edu
+**Contact:** brettlarsen [at] flatironinstitute.org
 
 <style>
 .course {
@@ -62,7 +62,7 @@ font-style: italic;
           <li>
             <i class="fa-li fa fa-graduation-cap"></i>
             <div class="description">
-              <p class="course"> <b>PhD in Physics</b>, In progress  </p>
+              <p class="course"> <b>PhD in Physics</b>, 2022  </p>
               <p class="course"> <b>MS in Statistics</b>, 2020 </p>
               <p class="institution">Stanford University</p>
             </div>
