@@ -1,12 +1,58 @@
 ---
 ---
-@article{larsen2022unmasking,
+@article{larsen2024tensorRKHS,
   abbr={arXiv},
+  title={Tensor Decomposition Meets RKHS: Efficient Algorithms for Smooth and Misaligned Data},
+  author={Larsen, Brett W. and Kolda, Tamara G. and Zhang, Anru R. and Williams, Alex H.},
+  journal={arXiv preprint arXiv:2408.05677,},
+  year={2024},
+  arxiv={2408.05677},
+  abstract={The canonical polyadic (CP) tensor decomposition decomposes a multidimensional data array into a sum of outer products of finite-dimensional vectors. Instead, we can replace some or all of the vectors with continuous functions (infinite-dimensional vectors) from a reproducing kernel Hilbert space (RKHS). We refer to tensors with some infinite-dimensional modes as quasitensors, and the approach of decomposing a tensor with some continuous RKHS modes is referred to as CP-HiFi (hybrid infinite and finite dimensional) tensor decomposition. An advantage of CP-HiFi is that it can enforce smoothness in the infinite dimensional modes. Further, CP-HiFi does not require the observed data to lie on a regular and finite rectangular grid and naturally incorporates misaligned data. We detail the methodology and illustrate it on a synthetic example.}
+}
+
+@article{larsen2024dataSpark,
+  abbr={COLM},
+  title={Does your data spark joy? Performance gains from domain upsampling at the end of training.},
+  author={Blakeney*, Cody and Paul*, Mansheej and Larsen*, Brett W. and Owen, Sean and Frankle, Jonathan},
+  journal={Conference on Language Modeling,},
+  year={2024},
+  pdf={https://openreview.net/forum?id=vwIIAot0ff},
+  arxiv={2406.03476},
+  abstract={Pretraining datasets for large language models (LLMs) have grown to trillions of tokens composed of large amounts of CommonCrawl (CC) web scrape along with smaller, domain-specific datasets. It is expensive to understand the impact of these domain-specific datasets on model capabilities as training at large FLOP scales is required to reveal significant changes to difficult and emergent benchmarks. Given the increasing cost of experimenting with pretraining data, how does one determine the optimal balance between the diversity in general web scrapes and the information density of domain specific data? In this work, we show how to leverage the smaller domain specific datasets by upsampling them relative to CC at the end of training to drive performance improvements on difficult benchmarks. This simple technique allows us to improve up to 6.90 pp on MMLU, 8.26 pp on GSM8K, and 6.17 pp on HumanEval relative to the base data mix for a 7B model trained for 1 trillion (T) tokens, thus rivaling Llama-2 (7B)—a model trained for twice as long. We experiment with ablating the duration of domain upsampling from 5% to 30% of training and find that 10% to 20% percent is optimal for navigating the tradeoff between general language modeling capabilities and targeted benchmarks. We also use domain upsampling to characterize at scale the utility of individual datasets for improving various benchmarks by removing them during this final phase of training. This tool opens up the ability to experiment with the impact of different pretraining datasets at scale, but at an order of magnitude lower cost compared to full pretraining runs.}
+}
+
+@article{larsen2024estimatingShape,
+  abbr={ICLR},
+  title={Estimating Shape Distances on Neural Representations with Limited Samples},
+  author={Psopisil, Dean A. and Larsen, Brett W. and Harvey, Sarah E. and Williams, Alex H.},
+  journal={International Conference on Learning Representations,},
+  year={2024},
+  pdf={https://openreview.net/forum?id=kvByNnMERu},
+  arxiv={2310.05742},
+  honor={Poster presentation at COSYNE 2024.},
+  abstract={A variety of recent works, spanning pruning, lottery tickets, and training within random subspaces, have shown that deep neural networks can be trained using far fewer degrees of freedom than the total number of parameters. We analyze this phenomenon for random subspaces by first examining the success probability of hitting a training loss sublevel set when training within a random subspace of a given training dimensionality.  We find a sharp phase transition in the success probability from 0 to 1 as the training dimension surpasses a threshold. This threshold training dimension increases as the desired final loss decreases, but decreases as the initial loss decreases. We then theoretically explain the origin of this phase transition, and its dependence on initialization and final desired loss, in terms of properties of the high-dimensional geometry of the loss landscape.  In particular, we show via Gordon's escape theorem, that the training dimension plus the Gaussian width of the desired loss sublevel set, projected onto a unit sphere surrounding the initialization, must exceed the total number of parameters for the success probability to be large.  In several architectures and datasets, we measure the threshold training dimension as a function of initialization and demonstrate that it is a small fraction of the total parameters, implying by our theory that successful training with so few dimensions is possible precisely because the Gaussian width of low loss sublevel sets is very large. Moreover, we compare this threshold training dimension to more sophisticated ways of reducing training degrees of freedom, including lottery tickets as well as a new, analogous method: lottery subspaces.}
+}
+
+@article{larsen2024dualityShape,
+  abbr={UniReps},
+  title={Duality of Bures and Shape Distances with Implications for Comparing Neural Representations.},
+  author={Harvey, Sarah E. and Larsen, Brett W. and Williams, Alex H.},
+  journal={Proceedings of the 1st Workshop on Unifying Representations in Neural Models (UniReps),},
+  year={2023},
+  pdf={https://openreview.net/forum?id=ydiDTfdbzP},
+  arxiv={2311.11436},
+  honor={Best Proceedings Paper Honorable Mention},
+  abstract={A multitude of (dis)similarity measures between neural network representations have been proposed, resulting in a fragmented research landscape. Most of these measures fall into one of two categories. First, measures such as linear regression, canonical correlations analysis (CCA), and shape distances, all learn explicit mappings between neural units to quantify similarity while accounting for expected invariances. Second, measures such as representational similarity analysis (RSA), centered kernel alignment (CKA), and normalized Bures similarity (NBS) all quantify similarity in summary statistics, such as stimulus-by-stimulus kernel matrices, which are already invariant to expected symmetries. Here, we take steps towards unifying these two broad categories of methods by observing that the cosine of the Riemannian shape distance (from category 1) is equal to NBS (from category 2). We explore how this connection leads to new interpretations of shape distances and NBS, and draw contrasts of these measures with CKA, a popular similarity measure in the deep learning literature.}
+}
+
+@article{larsen2023unmasking,
+  abbr={ICLR},
   title={Unmasking the Lottery Ticket Hypothesis: What's Encoded in a Winning Ticket's Mask?},
   author={Paul*, Mansheej and Chen*, Feng and Larsen*, Brett W. and Frankle, Jonathan and Ganguli, Surya and Dziugaite, Gintare Karolina},
-  journal={arXiv preprint arXiv:2210.03044,},
-  year={2022},
+  journal={International Conference on Learning Representations,},
+  year={2023},
   arxiv={2210.03044},
+  honor={Notable Top 25\% (Spotlight).},
   abstract={Modern deep learning involves training costly, highly overparameterized networks, thus motivating the search for sparser networks that can still be trained to the same accuracy as the full network (i.e. matching). Iterative magnitude pruning (IMP) is a state of the art algorithm that can find such highly sparse matching subnetworks, known as winning tickets. IMP operates by iterative cycles of training, masking smallest magnitude weights, rewinding back to an early training point, and repeating. Despite its simplicity, the underlying principles for when and how IMP finds winning tickets remain elusive. In particular, what useful information does an IMP mask found at the end of training convey to a rewound network near the beginning of training? How does SGD allow the network to extract this information? And why is iterative pruning needed? We develop answers in terms of the geometry of the error landscape. First, we find that—at higher sparsities—pairs of pruned networks at successive pruning iterations are connected by a linear path with zero error barrier if and only if they are matching. This indicates that masks found at the end of training convey the identity of an axial subspace that intersects a desired linearly connected mode of a matching sublevel set. Second, we show SGD can exploit this information due to a strong form of robustness: it can return to this mode despite strong perturbations early in training. Third, we show how the flatness of the error landscape at the end of training determines a limit on the fraction of weights that can be pruned at each iteration of IMP. Finally, we show that the role of retraining in IMP is to find a network with new small weights to prune. Overall, these results make progress toward demystifying the existence of winning tickets by revealing the fundamental role of error landscape geometry.}
 }
 
