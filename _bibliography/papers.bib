@@ -4,7 +4,7 @@
   abbr={arXiv},
   title={Tensor Decomposition Meets RKHS: Efficient Algorithms for Smooth and Misaligned Data},
   author={Larsen, Brett W. and Kolda, Tamara G. and Zhang, Anru R. and Williams, Alex H.},
-  journal={arXiv preprint arXiv:2408.05677,},
+  journal={arXiv preprint arXiv:2408.05677},
   year={2024},
   arxiv={2408.05677},
   abstract={The canonical polyadic (CP) tensor decomposition decomposes a multidimensional data array into a sum of outer products of finite-dimensional vectors. Instead, we can replace some or all of the vectors with continuous functions (infinite-dimensional vectors) from a reproducing kernel Hilbert space (RKHS). We refer to tensors with some infinite-dimensional modes as quasitensors, and the approach of decomposing a tensor with some continuous RKHS modes is referred to as CP-HiFi (hybrid infinite and finite dimensional) tensor decomposition. An advantage of CP-HiFi is that it can enforce smoothness in the infinite dimensional modes. Further, CP-HiFi does not require the observed data to lie on a regular and finite rectangular grid and naturally incorporates misaligned data. We detail the methodology and illustrate it on a synthetic example.}
@@ -14,7 +14,7 @@
   abbr={COLM},
   title={Does your data spark joy? Performance gains from domain upsampling at the end of training.},
   author={Blakeney*, Cody and Paul*, Mansheej and Larsen*, Brett W. and Owen, Sean and Frankle, Jonathan},
-  journal={Conference on Language Modeling,},
+  journal={Conference on Language Modeling (COLM)},
   year={2024},
   pdf={https://openreview.net/forum?id=vwIIAot0ff},
   arxiv={2406.03476},
@@ -25,7 +25,7 @@
   abbr={ICLR},
   title={Estimating Shape Distances on Neural Representations with Limited Samples},
   author={Psopisil, Dean A. and Larsen, Brett W. and Harvey, Sarah E. and Williams, Alex H.},
-  journal={International Conference on Learning Representations,},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2024},
   pdf={https://openreview.net/forum?id=kvByNnMERu},
   arxiv={2310.05742},
@@ -49,7 +49,7 @@
   abbr={ICLR},
   title={Unmasking the Lottery Ticket Hypothesis: What's Encoded in a Winning Ticket's Mask?},
   author={Paul*, Mansheej and Chen*, Feng and Larsen*, Brett W. and Frankle, Jonathan and Ganguli, Surya and Dziugaite, Gintare Karolina},
-  journal={International Conference on Learning Representations,},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2023},
   arxiv={2210.03044},
   honor={Notable Top 25\% (Spotlight).},
@@ -60,7 +60,7 @@
   abbr={NeurIPS},
   title={Lottery Tickets on a Data Diet: Finding Initializations with Sparse Trainable Networks},
   author={Paul*, Mansheej and Larsen*, Brett W. and Ganguli, Surya and Frankle, Jonathan and Dziugaite, Gintare Karolina},
-  journal={36th Conference on Neural Information Processing Systems,},
+  journal={36th Conference on Neural Information Processing Systems (NeurIPS)},
   year={2022},
   arxiv={2206.01278},
   code={https://github.com/mansheej/lth_diet},
@@ -72,7 +72,7 @@
   abbr={SIMAX},
   title={Practical leverage-based sampling for low-rank tensor decomposition},
   author={Larsen, Brett W. and Kolda, Tamara G.},
-  journal={SIAM Journal on Matrix Analysis and Applications (SIMAX),},
+  journal={SIAM Journal on Matrix Analysis and Applications (SIMAX)},
   year={2022},
   doi={https://doi.org/10.1137/21M1441754},
   arxiv={2006.16438},
@@ -85,7 +85,7 @@
   abbr={PLOS Comp Bio},
   title={Towards a more general understanding of the algorithmic utility of recurrent connections},
   author={Larsen, Brett W. and Druckmann, Shaul},
-  journal={PLOS Computational Biology,},
+  journal={PLOS Computational Biology},
   volume={18},
   number={6},
   pages={e1010227},
@@ -101,7 +101,7 @@
   abbr={ICLR},
   title={How many degrees of freedom do we need to train deep networks: a loss landscape perspective},
   author={Larsen, Brett W. and Fort, Stanislav and Becker, Nic and Ganguli, Surya},
-  journal={International Conference on Learning Representations,},
+  journal={International Conference on Learning Representations (ICLR)},
   year={2022},
   pdf={https://openreview.net/forum?id=ChMLTGRjFcU},
   arxiv={2107.05802},
@@ -109,9 +109,7 @@
   abstract={A variety of recent works, spanning pruning, lottery tickets, and training within random subspaces, have shown that deep neural networks can be trained using far fewer degrees of freedom than the total number of parameters. We analyze this phenomenon for random subspaces by first examining the success probability of hitting a training loss sublevel set when training within a random subspace of a given training dimensionality.  We find a sharp phase transition in the success probability from 0 to 1 as the training dimension surpasses a threshold. This threshold training dimension increases as the desired final loss decreases, but decreases as the initial loss decreases. We then theoretically explain the origin of this phase transition, and its dependence on initialization and final desired loss, in terms of properties of the high-dimensional geometry of the loss landscape.  In particular, we show via Gordon's escape theorem, that the training dimension plus the Gaussian width of the desired loss sublevel set, projected onto a unit sphere surrounding the initialization, must exceed the total number of parameters for the success probability to be large.  In several architectures and datasets, we measure the threshold training dimension as a function of initialization and demonstrate that it is a small fraction of the total parameters, implying by our theory that successful training with so few dimensions is possible precisely because the Gaussian width of low loss sublevel sets is very large. Moreover, we compare this threshold training dimension to more sophisticated ways of reducing training degrees of freedom, including lottery tickets as well as a new, analogous method: lottery subspaces.}
 }
 
-
-
-
+@comment{
 @article{kazemipour2020avoiding,
   abbr={arXiv},
   title={Avoiding Spurious Local Minima in Deep Quadratic Networks},
@@ -145,12 +143,20 @@
 
 @string{aps = {American Physical Society,}}
 
+@book{einstein1920relativity,
+  title={Relativity: the Special and General Theory},
+  author={Einstein, Albert},
+  year={1920},
+  publisher={Methuen & Co Ltd},
+  html={relativity.html}
+}
+
 @book{einstein1956investigations,
   bibtex_show={true},
   title={Investigations on the Theory of the Brownian Movement},
   author={Einstein, Albert},
   year={1956},
-  publisher={Courier Corporation,},
+  publisher={Courier Corporation},
   preview={brownian-motion.gif}
 }
 
@@ -159,20 +165,21 @@
   bibtex_show={true},
   title={The meaning of relativity},
   author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
+  journal={American Journal of Physics},
   volume={18},
   number={6},
   pages={403--404},
   year={1950},
-  publisher={American Association of Physics Teachers,}
+  publisher={American Association of Physics Teachers}
 }
 
 @article{PhysRev.47.777,
   abbr={PhysRev},
   title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
+  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
   abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
+  journal={Phys. Rev.},
+  location={New Jersey},
   volume={47},
   issue={10},
   pages={777--780},
@@ -184,13 +191,20 @@
   url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
   html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
   pdf={example_pdf.pdf},
-  selected={true}
+  altmetric={248277},
+  dimensions={true},
+  google_scholar_id={qyhmnyLat1gC},
+  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
+  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
+  annotation={* Example use of superscripts<br>† Albert Einstein},
+  selected={true},
+  inspirehep_id = {3255}
 }
 
 @article{einstein1905molekularkinetischen,
   title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
   author={Einstein, A.},
-  journal={Annalen der physik,},
+  journal={Annalen der physik},
   volume={322},
   number={8},
   pages={549--560},
@@ -202,7 +216,7 @@
   abbr={Ann. Phys.},
   title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
   author={Einstein, A.},
-  journal={Ann. Phys.,},
+  journal={Ann. Phys.},
   volume={17},
   pages={549--560},
   year={1905}
@@ -214,11 +228,29 @@
   year={1905}
 }
 
+@Article{einstein1905photoelectriceffect,
+  bibtex_show={true},
+  abbr={Ann. Phys.},
+  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
+  author={Albert Einstein},
+  abstract={This is the abstract text.},
+  journal={Ann. Phys.},
+  volume={322},
+  number={6},
+  pages={132--148},
+  year={1905},
+  doi={10.1002/andp.19053220607},
+  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
+  award_name={Nobel Prize}
+}
+
 @book{przibram1967letters,
   bibtex_show={true},
   title={Letters on wave mechanics},
   author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
   year={1967},
   publisher={Vision},
-  preview={wave-mechanics.gif}
+  preview={wave-mechanics.gif},
+  abbr={Vision}
+}
 }
